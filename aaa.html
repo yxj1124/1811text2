@@ -7,16 +7,22 @@
     <title>Document</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17-beta.0/vue.js"></scrip
 
+<style>
+      .ss{
+          color: brown;
+      }
+    </style>
 </head>
 <body>
+    <h1 style="color:brown">爱你们  我的舍友们</h1>
     <div id="box">
         <input type="range" min="0" max="255" v-model="r" />
         <input type="range" min="0" max="255" v-model="g"/>
         <input type="range" min="0" max="255" v-model="b"/>
         <input type="number" v-model="w">
         <input type="number" v-model="h">
-        
-        <div v-bind:style="{'width':w+'px','height':h+'px','color':'red',background:'rgb('+r+','+g+','+b+')'}">爱你们  我的舍友们</div>
+
+        <div class="ss" v-bind:style="{'width':w+'px','height':h+'px',background:'rgb('+r+','+g+','+b+')'}">爱你们  我的舍友们</div>
     </div>
     <script>
     new Vue({
